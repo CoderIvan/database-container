@@ -1,0 +1,10 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: redis-config
+  namespace: redis-system
+  labels:
+    app: redis-app
+data:
+  redis.conf: |-
+    requirepass root
